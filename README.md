@@ -4,6 +4,8 @@ This is a lightweight HTTP service designed to integrate with [Caddy](https://ca
 
 No external dependencies are required for this basic setup. The service reads a list of allowed domains from a file and dynamically updates the list without restarting the server.
 
+Caddy documentation: [Registered domains (on-demand)](https://caddy.community/t/serving-tens-of-thousands-of-domains-over-https-with-caddy/11179#registered-domains-on-demand-6)
+
 ## Features
 
 - Query endpoint for domain validation.
