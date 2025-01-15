@@ -1,0 +1,1 @@
+journalctl -u domain-checker.service -f

@@ -1,0 +1,16 @@
+[Unit]
+Description=Caddy Domain Checker Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /mnt/data/www/domain_checker/app.py
+WorkingDirectory=/mnt/data/www/domain_checker
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
